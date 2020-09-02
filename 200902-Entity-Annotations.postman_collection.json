@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "86113ec1-0792-4598-8d1a-9afd86d6235b",
+		"name": "200902-Entity-Annotations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "newTitle",
+							"value": "ut labore",
+							"type": "text"
+						},
+						{
+							"key": "newText",
+							"value": "et dolore magna aliqua",
+							"type": "text"
+						},
+						{
+							"key": "newRating",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "authorID",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:5001/Blog/AddPost",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Blog",
+						"AddPost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Author",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fName",
+							"value": "Russell",
+							"type": "text"
+						},
+						{
+							"key": "lName",
+							"value": "Eric",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:5001/Blog/AddAuthor",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Blog",
+						"AddAuthor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Blog/ListPosts",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Blog",
+						"ListPosts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Authors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Blog/ListAuthors",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Blog",
+						"ListAuthors"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
