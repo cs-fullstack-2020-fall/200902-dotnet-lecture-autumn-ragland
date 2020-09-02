@@ -8,6 +8,8 @@ namespace mvcwebapplication.Dao
         public MvcWebApplicationDbContext(DbContextOptions<MvcWebApplicationDbContext> options)
             : base(options) {}
 
-        // Add DBSet(s) here
+        // Add DbSet(s) here
+        public DbSet<BlogPost> BlogPosts {get;set;}
+        public DbSet<Author> Authors {get;set;}
     }
 }
